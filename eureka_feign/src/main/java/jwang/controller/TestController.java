@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-	@Autowired
-	TestInterface testInterface;
+	//@Autowired
+	//TestInterface testInterface;
 	@GetMapping("/getByFeign")
 	public String get(){
-		return testInterface.get();	
+		return "111";
+		///return testInterface.get();	
 	}
 }

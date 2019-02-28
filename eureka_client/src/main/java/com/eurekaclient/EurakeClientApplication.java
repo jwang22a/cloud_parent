@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 //由于springcloud启动类默认扫描自己所在的包，如果不在同一包下需加注解扫描
-@ComponentScan(basePackages = {"jwang.controller"})
+@ComponentScan(basePackages = {"jwang.controller,jwang.service"})
 public class EurakeClientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EurakeClientApplication.class, args);
