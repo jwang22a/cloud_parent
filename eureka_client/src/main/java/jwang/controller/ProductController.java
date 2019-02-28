@@ -12,7 +12,7 @@ import jwang.service.ProductService;
 @RestController
 @RequestMapping("/api/v1/product")
 public class ProductController {
-	//集群情况下，用于订单服务查看到底调用的是哪个商品微服务节点1111
+	//集群情况下，用于订单服务查看到底调用的是哪个商品微服务节点222
     @Value("${server.port}")
     private String port;
     @Autowired
