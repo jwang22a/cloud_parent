@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mn</groupId>
@@ -19,6 +20,10 @@
   	<module>eureka_cilent</module>
 	<module>eureka_feign</module>
 	<module>eureka_client</module>
+	<module>zuul-gateway</module>
+	<module>zuul-gateway1</module>
+	<module>fghjyh</module>
+    <module>aa</module>
   </modules>
     <!--统一管理版本-->
 	<properties>
@@ -33,6 +38,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
+		 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
@@ -52,6 +58,26 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-starter-openfeign</artifactId>
+	            <version>2.0.2.RELEASE</version>
+        	</dependency> 
+        	<dependency>
+		        <groupId>org.springframework.cloud</groupId>
+		        <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		        <version>2.1.1.RELEASE</version>
+		    </dependency>
+		    <dependency>
+			    <groupId>org.springframework.cloud</groupId>
+			    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			    <version>2.0.0.RELEASE</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.springframework.cloud</groupId>
+			    <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+			    <version>1.4.4.RELEASE</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
